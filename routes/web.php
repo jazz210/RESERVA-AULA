@@ -10,5 +10,12 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/login', [LoginController::class, 'create'] )-> name('login.index');
-Route::get('/register', [RegisterController::class, 'create'] )-> name('register.index');
+
+Route::get('/register', [RegisterController::class, 'create'] )
+    -> name('register.index');
+
+Route::post('/register', [RegisterController::class, 'store'] )
+    -> name('register.store');
+
+Route::get('/login', [LoginController::class, 'create'] )
+    -> name('login.index');

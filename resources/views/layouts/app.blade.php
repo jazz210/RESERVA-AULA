@@ -17,8 +17,8 @@
         </div>
         <ul class="w-1/2 tx-16 ml-auto flex justify-end pt-1">
             <li>
-                <a href="{{ route('login.index')}}" class="font-bold border-2 border-white py-2 px-5 rounded-md hover:bg-white hover:text-indigo-700"> login </a>
-                <a href="{{ route('register.index')}}"class="font-bold border-2 border-white py-2 px-5 rounded-md hover:bg-white hover:text-indigo-700"> register </a>
+                <a href="{{ route('login.index')}}" class="font-bold border-2 border-white py-2 px-5 rounded-md hover:bg-white hover:text-indigo-700"> iniciar sesion </a>
+                <a href="{{ route('register.index')}}"class="font-bold border-2 border-white py-2 px-5 rounded-md hover:bg-white hover:text-indigo-700"> registrar usuario </a>
             </li>
         </ul>
     </nav>

@@ -25,9 +25,11 @@ Route::get('/login', [LoginController::class, 'create'])
 Route::post('/login', [LoginController::class, 'store'])
     ->name('login.store');
 
-Route::get('/logout', [LoginController::class, 'destroy'])
-    //->middleware('auth')
-    ->name('login.destroy');
+/*Route::get('/logout', [LoginController::class, 'destroy'])
+    ->middleware('auth')
+    ->name('login.destroy');*/
+
+Route::put('/login', [LoginController::class, 'logout']);
 
 
 Route::get('/admin', [AdminController::class, 'index'])

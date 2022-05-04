@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller {
     
@@ -16,7 +17,7 @@ class LoginController extends Controller {
         
         if(auth()->attempt(request(['email', 'password'])) == false) {
             return back()->withErrors([
-                'message' => 'The email or password is incorrect, please try again',
+                'message' => 'su contraseña o email son incorrectos, vuelva a intentarlo',
             ]);
 
         } else {
@@ -27,10 +28,22 @@ class LoginController extends Controller {
                 return redirect()->to('/');
             }
         }
+
+
     }
 
-    public function destroy() { 
-    auth()->logout();
-    return redirect()->to('/');
-    }
+    
+    /*public function destroy() {
+
+        auth()->logout();
+
+        return redirect()->to('/');
+    }*/
+public function logout(Request $request){
+    Auth::logout();
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
+    return redirect('login');
+}
+
 }

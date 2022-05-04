@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\GestionarController;
+use App\Http\Controllers\AulasController;
 
 Route::get('/', function () {
     return view('home');
@@ -35,3 +37,10 @@ Route::put('/login', [LoginController::class, 'logout']);
 Route::get('/admin', [AdminController::class, 'index'])
     ->middleware('auth.admin')
     ->name('admin.index');
+
+Route::get('/gestionar', [GestionarController::class, 'create'])
+    ->middleware('guest')
+    ->name('gestionar.index');   
+Route::get('/aulas', [AulasController::class, 'create'])
+    ->middleware('guest')
+    ->name('aulas.index');

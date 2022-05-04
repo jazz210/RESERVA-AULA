@@ -38,7 +38,8 @@
         <button type="submit" class="rounded-m bg-indigo-400  text-lg text-white found-semibold p-1 my-2 hover:bg-indigo-600">ingresar</button>
     
     
-        <button type="submit" onclick="location.href='/'" class="rounded-m bg-indigo-400  text-lg text-white found-semibold p-1 my-2 hover:bg-red-600">cancelar</button>
+        <button type="button" class="rounded-md bg-indigo-500 w-full text-lg
+        text-white font-semibold p-2 my-3 hover:bg-indigo-600" name="Cancelar" value="Cancelar" onclick="location.href='/'">cancelar </button>
     
     </form>
 

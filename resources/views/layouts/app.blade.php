@@ -19,7 +19,7 @@
   <body class=" text-gray-800">
   
     <nav class="flex py-3 bg-gray-300">
-        <img class="w-20 h-30 md:w-350 md:h-auto md:rounded-none rounded-full mx-auto" src="/umss-san-simon-02.png" >
+        <img class="w-20 h-30 md:w-350 md:h-auto md:rounded-none rounded-full mx-auto" src="/umss-san-simon-02.png">
       <div class="w-1/2 px-12 mr-auto">
     
       </div>

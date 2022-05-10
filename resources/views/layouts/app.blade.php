@@ -15,14 +15,14 @@
 
     
   </head>
-  <body class="bg-gray-100 text-gray-800">
-
-    <nav class="flex py-5 bg-indigo-500 text-white">
+  
+  <body class=" text-gray-800">
+  
+    <nav class="flex py-3 bg-gray-300">
+        <img class="w-20 h-30 md:w-350 md:h-auto md:rounded-none rounded-full mx-auto" src="/umss-san-simon-02.png" >
       <div class="w-1/2 px-12 mr-auto">
-        <img src="../../css/imagen/umss-san-simon-02.png" >
     
       </div>
-
       <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
       @if(auth()->check())
         <li class="mx-8">
@@ -35,6 +35,7 @@
           border-2 border-white py-2 px-4 rounded-md hover:bg-red-500 
           hover:text-black">cerrar sesion</button>
         </form>
+        
       @else
         <li class="mx-6">
           <a href="{{ route('login.index') }}" class="font-semibold 
@@ -59,12 +60,65 @@
       
       </ul>
       
-
-
+      
     </nav>
-
+    <div class="bg-cover bg-center ..." style="background-image: url(/umss-san-simon-02.png)"></div>
 
     @yield('content')
+    
 
  </body>
+ 
+ <form class="mt-7" method="POST" action="">
+    @if(auth()->check())
+    
+        @csrf
+
+        <input type="namedoc" class="border border-gray-200 rounded-md bg-gray-200 w-full
+        text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" placeholder="Nombre de docente" id="namedoc" name="namedoc">
+        @error('namedoc')        
+      <p class="border border-red-500 rounded-md bg-red-100 w-full
+      text-red-600 p-2 my-2">* {{ $message }}</p>
+    @enderror
+
+        <input type="materia" class="border border-gray-200 rounded-md bg-gray-200 w-full
+        text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" placeholder="Materia" id="materia" name="materia">
+        @error('materia')        
+      <p class="border border-red-500 rounded-md bg-red-100 w-full
+      text-red-600 p-2 my-2">* {{ $message }}</p>
+    @enderror
+    
+        <input type="grupo" class="border border-gray-200 rounded-md bg-gray-200 w-full
+        text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" placeholder="Grupo" id="grupo" name="grupo">
+        @error('grupo')        
+      <p class="border border-red-500 rounded-md bg-red-100 w-full
+      text-red-600 p-2 my-2">* {{ $message }}</p>
+    @enderror
+
+       <input type="cantestu" class="border border-gray-200 rounded-md bg-gray-200 
+    w-full text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" 
+    placeholder="Numero de estudiantes" id="cantestu" 
+    name="cantestu">
+    @error('grupo')        
+      <p class="border border-red-500 rounded-md bg-red-100 w-full
+      text-red-600 p-2 my-2">* {{ $message }}</p>
+    @enderror
+
+
+    <input type="detalle" class="border border-gray-200 rounded-md bg-gray-200 w-full
+    text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" placeholder="Detalle" id="detalle" name="detalle">
+    @error('detalle')        
+  <p class="border border-red-500 rounded-md bg-red-100 w-full
+  text-red-600 p-2 my-2">* {{ $message }}</p>
+@enderror
+        
+    
+        <button type="submit" class="rounded-m bg-indigo-400  text-lg text-white found-semibold p-1 my-2 hover:bg-indigo-600">ingresar</button>
+    
+    
+        <button type="button" class="rounded-m bg-indigo-400  text-lg text-white found-semibold p-1 my-2 hover:bg-indigo-600 name="Cancelar" value="Cancelar" onclick="location.href='/'">cancelar </button>
+        @endif
+    </form>
+
+
 </html>

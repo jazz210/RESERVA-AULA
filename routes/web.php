@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GestionarController;
 use App\Http\Controllers\AulasController;
 
+
 Route::get('/', function () {
     return view('home');
 })->middleware('auth');

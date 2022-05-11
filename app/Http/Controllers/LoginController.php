@@ -31,14 +31,6 @@ class LoginController extends Controller {
 
 
     }
-
-    
-    /*public function destroy() {
-
-        auth()->logout();
-
-        return redirect()->to('/');
-    }*/
 public function logout(Request $request){
     Auth::logout();
     $request->session()->invalidate();

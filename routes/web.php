@@ -39,6 +39,10 @@ Route::get('/admin', [AdminController::class, 'index'])
     ->middleware('auth.admin')
     ->name('admin.index');
 
+Route::get('/usua', [UsuController::class, 'index'])
+    ->middleware('auth.usua')
+    ->name('usua.index');
+
 Route::get('/gestionar', [GestionarController::class, 'create'])
     ->middleware('guest')
     ->name('gestionar.index');   

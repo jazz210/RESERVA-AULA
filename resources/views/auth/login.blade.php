@@ -5,10 +5,10 @@
 @section('content')
 
 <div class="block mx-auto my-12 p-8   w-1/3 border-gray-200 rounded-lg shadow-lg
-" style="background-color:rgba(50, 156, 192, 0.5)">
+" style="background-color:rgba(50, 156, 192, 0.7)">
 
 
-  <h1 class="text-3xl text-center font-bold">Login</h1>
+  <h1 class="text-4xl text-center font-bold">Login</h1>
 
   <form class="mt-4" method="POST" action="">
     @csrf

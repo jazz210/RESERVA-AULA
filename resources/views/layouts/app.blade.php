@@ -8,7 +8,7 @@
 
     <title>@yield('title') - Laravel App</title>
        
-    
+      
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
@@ -17,9 +17,31 @@
   </head>
   
   <body class=" text-gray-800">
+    <div class="fondo bg-no-repeat bg-cover bg-center">
+    <style>
+      .fondo{
+        background-image: url("{{asset('img/principal.png')}}");
+        height: 721px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+       
+      }
+      </style>
   
-    <nav class="flex py-3 bg-gray-300">
-        <img class="w-20 h-30 md:w-350 md:h-auto md:rounded-none rounded-full mx-auto" src="/umss-san-simon-02.png">
+    <nav class="flex py-3 bg-gradient-to-r from-blue-300 via-green-400 to-yellow-300">
+      
+      <div class="logo bg-contain bg-no-repeat"></div>
+      <style>
+      .logo{
+        background-image: url("{{asset('img/umss-san-simon-02.png')}}");
+        height: 100px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    
       <div class="w-1/2 px-12 mr-auto">
     
       </div>
@@ -63,11 +85,13 @@
       
       
     </nav>
-    <div class="bg-cover bg-center ..." style="background-image: url(/umss-san-simon-02.png)"></div>
+    
 
     @yield('content')
     
-
+    
+    
+    
  </body>
  
 

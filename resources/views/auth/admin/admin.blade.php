@@ -4,20 +4,10 @@
 
 @section('content')
 <head>
-  <meta charset="UTF-8">
-  <style>
-    .fondo{
-      background: url();
-      height: 500px;
-    }
-  </style>
+ 
 </head>
 <body>
-  
-  <div class="fondo">
-  </div>
-
-
+  <div class="bg-cover bg-center ..." style="background-image: url(/../fondo1.jpg)"></div>
 
 </body>
 

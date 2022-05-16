@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('/img/hero-pattern.svg')",
-        'footer-texture': "url('/escudo-01.png')",
+        'footer-texture': "url('/umss-san-simon-02.png')",
       }
     }
   },
@@ -12,5 +12,6 @@ module.exports = {
 }
 
 module.exports = {
+  
   
 }

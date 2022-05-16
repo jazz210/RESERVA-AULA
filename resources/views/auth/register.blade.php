@@ -2,7 +2,7 @@
 @section('title','register')
 @section('content')
 
-<div class="block mx-auto my-12 p-8   w-1/3 border-gray-200 rounded-lg shadow-lg" style="background-color:rgba(50, 156, 192, 0.5)">
+<div class="block mx-auto my-12 p-8   w-1/3 border-gray-400 rounded-lg shadow-lg" style="background-color:rgba(50, 156, 192, 0.5)">
     
     <h1 class="text-3xl text-center fond-bold ">NUEVO USUARIO</h1>
     <form class="mt-4" method="POST" action="">

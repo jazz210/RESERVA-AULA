@@ -6,6 +6,9 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GestionarController;
 use App\Http\Controllers\AulasController;
+use App\Http\Controllers\GestionarAulasController;
+use App\Http\Controllers\InformacionReservasController;
+use App\Http\Controllers\ListaReservasController;
 
 
 Route::get('/', function () {
@@ -40,8 +43,21 @@ Route::get('/admin', [AdminController::class, 'index'])
     ->name('admin.index');
 
 Route::get('/gestionar', [GestionarController::class, 'create'])
-    ->middleware('guest')
-    ->name('gestionar.index');   
+    ->middleware('auth.admin')
+    ->name('gestionar.index');  
+
 Route::get('/aulas', [AulasController::class, 'create'])
     ->middleware('guest')
     ->name('aulas.index');
+
+Route::get('/gestionaraulas', [GestionarAulasController::class, 'create'])
+    ->middleware('auth.admin')
+    ->name('gestionaraulas.index');
+
+Route::get('/informacionreservas', [InformacionReservasController::class, 'create'])
+    ->middleware('auth.admin')
+    ->name('informacionreservas.index');
+
+Route::get('/listareservas', [ListaReservasController::class, 'create'])
+    ->middleware('guest')
+    ->name('listareservas.index');

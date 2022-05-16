@@ -28,35 +28,45 @@
         <li class="mx-8">
           <p class="text-xl">Bienvenido <b>{{ auth()->user()->name }}</b></p>
         </li>
+        <li>
+          <a href="{{ route('informacionreservas.index') }}" class="font-semibold
+          border-2 border-white py-2 px-4 rounded-md hover:bg-white 
+          hover:text-indigo-700">Informacion_Reservas</a>
+        </li>
+        <li>
+          <a href="{{ route('gestionaraulas.index') }}" class="font-semibold
+          border-2 border-white py-2 px-4 rounded-md hover:bg-white 
+          hover:text-indigo-700">Gestionar_Aulas</a>
+        </li>
         <form action="login" method="post" class="navbar-brand">
             @method('put')
             @csrf
             <button class="btn font-semibold
           border-2 border-white py-2 px-4 rounded-md hover:bg-red-500 
-          hover:text-black">cerrar sesion</button>
+          hover:text-indigo-700">Cerrar_Sesion</button>
         </form>
-        
       @else
-        <li class="mx-6">
+        <li>
           <a href="{{ route('login.index') }}" class="font-semibold
           border-2 border-white py-2 px-4 rounded-md hover:bg-white 
-          hover:text-indigo-700">Log In</a>
+          hover:text-indigo-700">Log_In</a>
         </li>
         <li>
           <a href="{{ route('register.index') }}" class="font-semibold
           border-2 border-white py-2 px-4 rounded-md hover:bg-white 
-          hover:text-indigo-700">Register</a>
-        </li>
-        <li>
-          <a href="{{ route('gestionar.index') }}" class="font-semibold
-          border-2 border-white py-2 px-4 rounded-md hover:bg-white 
-          hover:text-indigo-700">Gestionar</a>
+          hover:text-indigo-700">Registrarse</a>
         </li>
         <li>
           <a href="{{ route('aulas.index') }}" class="font-semibold
           border-2 border-white py-2 px-4 rounded-md hover:bg-white 
-          hover:text-indigo-700">Aulas Disponibles</a>
+          hover:text-indigo-700">Aulas_Disponibles</a>
         </li>
+        <li>
+          <a href="{{ route('listareservas.index') }}" class="font-semibold
+          border-2 border-white py-2 px-4 rounded-md hover:bg-white 
+          hover:text-indigo-700">Lista_Reservas</a>
+        </li>
+        
       @endif
       
       </ul>

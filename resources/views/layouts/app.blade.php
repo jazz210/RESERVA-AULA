@@ -11,24 +11,14 @@
       
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
 
     
   </head>
   
   <body class=" text-gray-800">
-    <div class="fondo bg-no-repeat bg-cover bg-center">
-    <style>
-      .fondo{
-        background-image: url("{{asset('img/principal.png')}}");
-        height: 721px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-       
-      }
-      </style>
-  
+
+    
     <nav class="flex py-3 bg-gradient-to-r from-blue-300 via-green-400 to-yellow-300">
       
       <div class="logo bg-contain bg-no-repeat"></div>
@@ -74,11 +64,6 @@
           hover:text-indigo-700">Log_In</a>
         </li>
         <li>
-          <a href="{{ route('register.index') }}" class="font-semibold
-          border-2 border-white py-2 px-4 rounded-md hover:bg-white 
-          hover:text-indigo-700">Registrarse</a>
-        </li>
-        <li>
           <a href="{{ route('aulas.index') }}" class="font-semibold
           border-2 border-white py-2 px-4 rounded-md hover:bg-white 
           hover:text-indigo-700">Aulas_Disponibles</a>
@@ -88,7 +73,11 @@
           border-2 border-white py-2 px-4 rounded-md hover:bg-white 
           hover:text-indigo-700">Lista_Reservas</a>
         </li>
-        
+        <li>
+          <a href="{{ route('register.index') }}" class="boton font-semibold
+          border-2 border-white py-3 px-4 rounded-md hover:bg-white
+          text-white hover:text-black">Registrar</a>
+        </li>        
       @endif
       
       </ul>
@@ -96,11 +85,26 @@
       
     </nav>
     
+    <div class="fondo bg-no-repeat bg-cover bg-center">
+      <style>
+     .fondo{
+       background-image: url("{{asset('img/principal.png')}}");
+       background-color: rgb(123, 122, 122);
+       background-blend-mode: soft-light;
+       height: 100%;
+       width: 100%;
+       position: fixed;
+
+       
+     }
+     </style>
+    
+    
 
     @yield('content')
     
     
-    
+   
     
  </body>
  

@@ -6,6 +6,18 @@
 <head>
  
 </head>
+<style type="text/css">
+    li {
+        border: 1px solid blue;
+        border-collapse: collapse;
+        padding: 35px;
+        background-color: #3380FF;
+        width: 300px;
+        height: 100px;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+</style>
 <body>
   <div class="bg-cover bg-center ..." style="background-image: url(/../fondo1.jpg)"></div>
         <li>

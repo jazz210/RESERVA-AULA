@@ -3,7 +3,6 @@
 @section('content')
 
 <body background="/prueba.png">
-
 <h1 class="text-5xl text-center pt-24">bienvenido a la pagina</h1>
 <form class="mt-7" method="POST" action="">
     @if(auth()->check())

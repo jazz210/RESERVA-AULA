@@ -18,11 +18,8 @@ Route::get('/', function () {
 Route::get('/register', [RegisterController::class, 'create'])
     ->middleware('auth.admin')
     ->name('register.index');
-
 Route::post('/register', [RegisterController::class, 'store'])
     ->name('register.store');
-
-
 
 Route::get('/login', [LoginController::class, 'create'])
     ->middleware('guest')
@@ -48,20 +45,30 @@ Route::get('/usua', [UsuController::class, 'index'])
 
 Route::get('/gestionar', [GestionarController::class, 'create'])
     ->middleware('auth.admin')
-    ->name('gestionar.index');  
+    ->name('gestionar.index'); 
+Route::post('/gestionar', [RegisterController::class, 'store'])
+    ->name('gestionar.store'); 
 
 Route::get('/aulas', [AulasController::class, 'create'])
     ->middleware('guest')
     ->name('aulas.index');
+Route::post('/aulas', [RegisterController::class, 'store'])
+    ->name('aulas.store');
 
 Route::get('/gestionaraulas', [GestionarAulasController::class, 'create'])
     ->middleware('auth.admin')
     ->name('gestionaraulas.index');
+Route::post('/gestionaraulas', [RegisterController::class, 'store'])
+    ->name('gestionaraulas.store');
 
 Route::get('/informacionreservas', [InformacionReservasController::class, 'create'])
     ->middleware('auth.admin')
     ->name('informacionreservas.index');
+Route::post('/informacionreservas', [RegisterController::class, 'store'])
+    ->name('informacionreservas.store');
 
 Route::get('/listareservas', [ListaReservasController::class, 'create'])
     ->middleware('auth.admin')
     ->name('listareservas.index');
+Route::post('/listareservas', [RegisterController::class, 'store'])
+    ->name('listareservas.store');

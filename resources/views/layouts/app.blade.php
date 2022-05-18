@@ -56,7 +56,7 @@
         <li>
           <a href="{{ route('aulas.index') }}" class="font-semibold
           border-2 border-white py-2 px-4 rounded-md hover:bg-white
-          hover:text-indigo-700">Aulas_Disponibles</a>
+          hover:text-indigo-700">Aulas</a>
         </li>
       @endif
 

@@ -9,4 +9,7 @@ class GestionarAulasController extends Controller
     public function create(){
         return view('auth.admin.gestionaraulas');
     }
+    public function store(){
+        return redirect()->to('/admin');
+    }
 }

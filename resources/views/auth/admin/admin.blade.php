@@ -38,7 +38,7 @@
         <li>
           <a href="{{ route('register.index') }}" class="font-semibold
           border-2 border-white py-2 px-4 rounded-md hover:bg-white 
-          hover:text-indigo-700">Registrarse</a>
+          hover:text-indigo-700">Registrar_Docente</a>
         </li>
         <li>
           <a href="{{ route('listareservas.index') }}" class="font-semibold

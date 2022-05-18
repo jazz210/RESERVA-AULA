@@ -31,34 +31,41 @@
           <p class="border border-red-500 rounded-md bg-red-100 w-full
           text-red-600 p-2 my-2">* {{ $message }}</p>
         @enderror
-        <input type="estado" class="border border-gray-200 rounded-md bg-gray-200
-        w-full text-lg placeholder-gray-900 p-2 my-2 focus:bg-white"
-        placeholder="Estado" id="estado"
-        name="Estado">
-        @error('Estado')
-          <p class="border border-red-500 rounded-md bg-red-100 w-full
-          text-red-600 p-2 my-2">* {{ $message }}</p>
-        @enderror
+
+       <div class="form-group">
+            <br><label class="border border-gray-200 rounded-md bg-gray-200
+            w-full text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" for="ESTADO">ESTADO:</label>
+            <select name="ESATDO" id="estado">
+                <option value="">Seleccione..</option>
+                <option value="1">urgente</option>
+                <option value="2">normal</option>
+            </select>
+            @error('SEMESTRE_ESP')
+                <br>
+                    <small>*{{$message}}</small>
+                <br>
+            @enderror
         </p>
 
     <p>
-        <input type="fecha" class="border border-gray-200 rounded-md bg-gray-200
-        w-full text-lg placeholder-gray-900 p-2 my-2 focus:bg-white"
-        placeholder="mm/dd/yy" id="fecha"
-        name="fecha">
-        @error('fecha')
-          <p class="border border-red-500 rounded-md bg-red-100 w-full
-          text-red-600 p-2 my-2">* {{ $message }}</p>
+      <div class="form-group">
+        <br><label class="border border-gray-200 rounded-md bg-gray-200
+        w-full text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" for="FECHA_ESP">FECHA</label>
+        <input class="form-control" type="date" id="fecha_esp" name="FECHA_ESP" placeholder="Select date" max="2022-01-31" value="{{ old('FECHA_ESP')}}">
+        @error('FECHA_ESP')
+            <br>
+                <small>*{{$message}}</small>
+            <br>
         @enderror
         </p>
-
+<p>
     <input type="grupo" class="border border-gray-200 rounded-md bg-gray-200 w-full
     text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" placeholder="Grupo" id="grupo" name="grupo">
     @error('grupo')
   <p class="border border-red-500 rounded-md bg-red-100 w-full
   text-red-600 p-2 my-2">* {{ $message }}</p>
     @enderror
-
+</p>
     <input type="cantestu" class="border border-gray-200 rounded-md bg-gray-200
     w-full text-lg placeholder-gray-900 p-2 my-2 focus:bg-white"
     placeholder="Numero de estudiantes" id="cantestu"

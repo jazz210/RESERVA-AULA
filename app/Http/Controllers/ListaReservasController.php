@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ListaReservasController extends Controller
 {
     public function create(){
-        return view('auth.listareservas');
+        return view('auth.admin.listareservas');
     }
 }

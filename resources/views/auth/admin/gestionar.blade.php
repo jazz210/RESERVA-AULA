@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('auth.admin.admin')
 @section('Title','gestionar')
 @section('content')
 
@@ -12,7 +12,7 @@
 
     }
     th, td{
-        padding: 10px;
+        padding: 2px;
     }
     th{
         background-color: #3380FF
@@ -58,7 +58,7 @@
         </table>
     </body>
     <button class="btn btn-success font-bold border-2 border-white py-2 px-4 rounded-md hover:bg-white hover:text-indigo-700" >Crear nueva cuenta</button>
-    <button class="btn btn-success font-bold border-2 border-white py-2 px-4 rounded-md hover:bg-white hover:text-red-700">Volver a la pagina princiapl</button>
+    <button class="btn btn-success font-bold border-2 border-white py-2 px-4 rounded-md hover:bg-white hover:text-red-700"name="Cancelar" value="Cancelar" onclick="location.href='/admin'">Salir </button>
 </div>
 </h1>
 @endsection

@@ -9,4 +9,7 @@ class GestionarController extends Controller
     public function create(){
         return view('auth.admin.gestionar');
     }
+    public function store(){
+        return redirect()->to('/admin');
+    }
 }

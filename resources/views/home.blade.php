@@ -59,7 +59,7 @@
 @enderror
         
     
-        <button type="submit" class="rounded-m bg-indigo-400  text-lg text-white found-semibold p-1 my-2 hover:bg-indigo-600">ingresar</button>
+        <button href="{{ route('aulas.index') }}" class="rounded-m bg-indigo-400  text-lg text-white found-semibold p-1 my-2 hover:bg-indigo-600">Aulas_Disponibles</button>
     
     
         <button type="button" class="rounded-m bg-indigo-400  text-lg text-white found-semibold p-1 my-2 hover:bg-indigo-600 name="Cancelar" value="Cancelar" onclick="location.href='/'">cancelar </button>

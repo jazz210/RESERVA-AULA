@@ -47,19 +47,9 @@
       </div>
       <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
       @if(auth()->check())
-        <li class="mx-8">
+        <li2 class="mx-8">
           <p class="text-xl">Bienvenido <b>{{ auth()->user()->name }}</b></p>
-        </li>
-        <li>
-          <a href="{{ route('informacionreservas.index') }}" class="font-semibold
-          border-2 border-white py-2 px-4 rounded-md hover:bg-white 
-          hover:text-indigo-700">Informacion_Reservas</a>
-        </li>
-        <li>
-          <a href="{{ route('gestionaraulas.index') }}" class="font-semibold
-          border-2 border-white py-2 px-4 rounded-md hover:bg-white 
-          hover:text-indigo-700">Gestionar_Aulas</a>
-        </li>
+        </li2>
         <form action="login" method="post" class="navbar-brand">
             @method('put')
             @csrf
@@ -72,11 +62,6 @@
           <a href="{{ route('login.index') }}" class="font-semibold
           border-2 border-white py-2 px-4 rounded-md hover:bg-white 
           hover:text-indigo-700">Log_In</a>
-        </li>
-        <li>
-          <a href="{{ route('register.index') }}" class="font-semibold
-          border-2 border-white py-2 px-4 rounded-md hover:bg-white 
-          hover:text-indigo-700">Registrarse</a>
         </li>
         <li>
           <a href="{{ route('aulas.index') }}" class="font-semibold

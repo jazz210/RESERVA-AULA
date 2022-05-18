@@ -16,7 +16,7 @@ Route::get('/', function () {
 })->middleware('auth');
 
 Route::get('/register', [RegisterController::class, 'create'])
-    ->middleware('guest')
+    ->middleware('auth.admin')
     ->name('register.index');
 
 Route::post('/register', [RegisterController::class, 'store'])
@@ -63,5 +63,5 @@ Route::get('/informacionreservas', [InformacionReservasController::class, 'creat
     ->name('informacionreservas.index');
 
 Route::get('/listareservas', [ListaReservasController::class, 'create'])
-    ->middleware('guest')
+    ->middleware('auth.admin')
     ->name('listareservas.index');

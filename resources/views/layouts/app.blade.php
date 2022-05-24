@@ -80,43 +80,42 @@
      </style>
 
 
-
-    @yield('content')
-    <footer class="footer">
-      <div class="contaniers">
-          <p>Contactanos</p>
-          <p>Celular: +591 73770458</p>
-          <p>Email: entersoftsrl@gmail.com</p>
-          <P>Direccion: Av. América y Calle Rosales N°1556</P>
-          <p>Copyright 2022 - Pagina creada por  EnterSoft S.R.L - Todos los derechos reservados</p>
-      </div>
+<footer class="footer bg-center">
+  <div class="contaniers">
+      <p>Contactanos</p>
+      <p>Celular: +591 73770458</p>
+      <p>Email: entersoftsrl@gmail.com</p>
+      <P>Direccion: Av. América y Calle Rosales N°1556</P>
+      <p>Copyright 2022 - Pagina creada por  EnterSoft S.R.L - Todos los derechos reservados</p>
+  </div>
 
 </footer>
 <style>
 .footer {
-  background: rgb(59, 174, 202);
-  color: rgb(68, 68, 68);
-  padding: 1rem 0;
-  justify-content: center;
-  text-align:center;
-  line-height: 0.85;
-  font-size: 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  width: 100%;
-  margin-top: auto;
+background: rgb(59, 174, 202);
+color: rgb(68, 68, 68);
+padding: 1rem 0;
+justify-content: center;
+text-align:center;
+line-height: 0.85;
+font-size: 10px;
+position: inherit;
+width: 100%;
+bottom: 0;
+margin-top: auto;
 }
 
 .footer .contaniers {
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  width: 50%;
-  margin: auto;
+justify-content: center;
+align-items: center;
+max-width: 1200px;
+width: 50%;
+margin: auto;
 }
 
 </style>
+    @yield('content')
+    
 
     
  </body>

@@ -102,7 +102,6 @@ font-size: 10px;
 position: inherit;
 width: 100%;
 bottom: 0;
-width: 100%;
 margin-top: auto;
 }
 

@@ -11,9 +11,10 @@ use App\Http\Controllers\InformacionReservasController;
 use App\Http\Controllers\ListaReservasController;
 
 
+
 Route::get('/', function () {
     return view('home');
-})->middleware('auth');
+})->middleware('auth')->name('home');
 
 Route::get('/register', [RegisterController::class, 'create'])
     ->middleware('auth.admin')
@@ -54,6 +55,9 @@ Route::get('/aulas', [AulasController::class, 'create'])
     ->name('aulas.index');
 Route::post('/aulas', [RegisterController::class, 'store'])
     ->name('aulas.store');
+
+Route::post('/guardar',[AulasController::class, 'store_reservation'])
+    ->name('guardar-aula');
 
 Route::get('/gestionaraulas', [GestionarAulasController::class, 'create'])
     ->middleware('auth.admin')

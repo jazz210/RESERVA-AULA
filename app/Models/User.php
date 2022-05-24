@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Model;
 
 class User extends Authenticatable
 {
@@ -44,6 +45,9 @@ class User extends Authenticatable
 
 public function setPasswordAttribute($password){
     $this->attributes['password']=bcrypt($password);
+}
+public function reservation(){
+    return $this->hasMany(Reservation::class);
 }
 }
 

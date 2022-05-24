@@ -71,4 +71,4 @@ Route::get('/listareservas', [ListaReservasController::class, 'create'])
     ->middleware('auth.admin')
     ->name('listareservas.index');
 Route::post('/listareservas', [RegisterController::class, 'store'])
-    ->name('listareservas.store');
+    ->name('listareservas.store'); 

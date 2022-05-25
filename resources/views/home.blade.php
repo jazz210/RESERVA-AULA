@@ -5,7 +5,7 @@
 <div class="block mx-auto my-12 p-8   w-1/3 border-gray-400 rounded-lg shadow-lg" style="background-color:rgba(50, 156, 192, 0.5)">
 
     <h1 class="text-3xl text-center fond-bold ">RESERVAR AULA</h1>
-    <form class="mt-4" method="POST" action="">
+    <form class="mt-4" method="POST" action="{{ route('guardar-aula')}}">
         @csrf
 
         <input type="namedoc" class="border border-gray-200 rounded-md bg-gray-200 w-full
@@ -33,12 +33,10 @@
         @enderror
 
        <div class="form-group">
-            <br><label class="border border-gray-100 rounded-md bg-gray-100 
-            w-full text-lg  p-1 my-1 " for="ESTADO">ESTADO:</label>
-            <select name="ESTADO" id="estado" class="border rounded-md">
+            
                 <option value="">Seleccione..</option>
-                <option value="1">urgente</option>
-                <option value="2">normal</option>
+                <option value="urgente">urgente</option>
+                <option value="normal">normal</option>
             </select>
             @error('SEMESTRE_ESP')
                 <br>
@@ -87,7 +85,10 @@
         <button type="button" class="rounded-md bg-indigo-500 w-center text-lg
         text-white font-semibold p-2 my-3 hover:bg-indigo-600" name="Cancelar" value="Cancelar" onclick="location.href='/'">cancelar </button>
         <button type="submit" class="rounded-m bg-indigo-500  text-lg text-white found-semibold p-2 my-3 hover:bg-indigo-600">solicitar</button>
-    </form>
+        <a href="{{ route('aulas.index') }}" class="font-semibold
+          border-2 border-white py-2 px-4 rounded-md hover:bg-white
+          hover:text-indigo-700">Aulas</a>
+      </form>
 
 </div>
 

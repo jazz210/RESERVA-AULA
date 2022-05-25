@@ -2,7 +2,7 @@
 @section('Title','listareservas')
 @section('content')
 
-<h1 class="text-5xl text-center pt-24">Lista de Reservas</h1>
+<h1 class="text-5xl text-center pt-24 text-white">LISTA RESERVAS</h1>
 
 <h1 class="text-3xl text-center pt-20">
 <style type="text/css">
@@ -15,10 +15,10 @@
         padding: 2px;
     }
     th{
-        background-color: #3380FF
+        background-color: #e7a874
     }
-    td:hover{
-        background-color: #33D4FF
+    td{
+        background-color: #ced7da
     }
     table{
         width: 60%;
@@ -63,7 +63,7 @@
             </tr>
         </table>
     </body>
-    <button class="btn btn-success font-bold border-2 border-white py-2 px-4 rounded-md hover:bg-white hover:text-red-700"name="Cancelar" value="Cancelar" onclick="location.href='/admin'">Salir </button>
+    <button class="btn btn-success font-bold border-2 border-white py-2 px-4 rounded-md hover:bg-white text-white hover:text-red-700"name="Cancelar" value="Cancelar" onclick="location.href='/admin'">Salir </button>
 </div>
 </h1>
 @endsection

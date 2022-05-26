@@ -33,6 +33,9 @@
         @enderror
 
        <div class="form-group">
+        <br><label class="border border-gray-200 rounded-md bg-gray-200
+        w-full text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" for="ESTADO">ESTADO:</label>
+        <select name="ESTADO" id="estado">
             
                 <option value="">Seleccione..</option>
                 <option value="urgente">urgente</option>

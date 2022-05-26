@@ -17,23 +17,15 @@
   </head>
 
   <body class=" text-gray-800">
-      <style>
-          .body{
-              margin: 0;
-             margin-bottom: 40px;
-          }
-      </style>
-
-
-
-    <nav class="flex py-3 bg-gradient-to-r from-blue-300 via-green-400 to-yellow-300 ">
+     
+    <nav class="flex py-1 bg-gradient-to-r from-blue-300 via-green-400 to-yellow-300 ">
 
       <div class="logo bg-contain bg-no-repeat"></div>
       <style>
       .logo{
         background-image: url("{{asset('img/umss-san-simon-02.png')}}");
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
         margin-left: auto;
         margin-right: auto;
       }
@@ -107,9 +99,9 @@ justify-content: center;
 text-align:center;
 /*line-height: 0.85;*/
 font-size: 10px;
-position: absolute;
+position: fixed;
 width: 100%;
-height: 70px;
+height: 80px;
 bottom: 0;
 left: 0;
 /*margin-top: auto;*/

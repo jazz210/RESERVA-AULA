@@ -36,7 +36,7 @@
         <br><label class="border border-gray-200 rounded-md bg-gray-200
         w-full text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" for="ESTADO">ESTADO:</label>
         <select name="ESTADO" id="estado">
-            
+
                 <option value="">Seleccione..</option>
                 <option value="urgente">urgente</option>
                 <option value="normal">normal</option>
@@ -46,19 +46,19 @@
                     <small>*{{$message}}</small>
                 <br>
             @enderror
-        
 
-    
+
+
       <div class="form-group">
         <br><label class="border border-gray rounded-md bg-gray-200
         w-full text-lg p-1 my-1 focus:bg-white" for="FECHA_ESP">FECHA</label>
-        <input class="form-control rounded-md" type="date" id="fecha_esp" name="FECHA_ESP" placeholder="Select date" max="2022-01-31" value="{{ old('FECHA_ESP')}}">
+        <input class="form-control rounded-md" type="date" id="fecha_esp" name="FECHA_ESP" placeholder="Select date" max="2030-01-31" value="{{ old('FECHA_ESP')}}">
         @error('FECHA_ESP')
             <br>
                 <small>*{{$message}}</small>
             <br>
         @enderror
-        
+
 
     <input type="grupo" class="border border-gray-200 rounded-md bg-gray-200 w-full
     text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" placeholder="Grupo" id="grupo" name="grupo">

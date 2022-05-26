@@ -17,6 +17,13 @@
   </head>
 
   <body class=" text-gray-800">
+      <style>
+          .body{
+              margin: 0;
+             margin-bottom: 40px;
+          }
+      </style>
+
 
 
     <nav class="flex py-3 bg-gradient-to-r from-blue-300 via-green-400 to-yellow-300 ">
@@ -65,18 +72,19 @@
 
     </nav>
 
-    <div class="fondo bg-no-repeat bg-cover bg-center">
+    <div class="fondo bg-no-repeat">
       <style>
      .fondo{
+         background-size: cover;
        background-image: url("{{asset('img/principal.png')}}");
        background-color: rgb(123, 122, 122);
+       background-position: center center;
        background-blend-mode: soft-light;
        height: 100%;
        width: 100%;
-       position:absolute;
-
-
-     }
+       background-attachment: fixed;
+      position: absolute;
+    }
      </style>
 
 
@@ -94,22 +102,24 @@
 .footer {
 background: rgb(59, 174, 202);
 color: rgb(68, 68, 68);
-padding: 1rem 0;
+/*padding: 1rem 0;*/
 justify-content: center;
 text-align:center;
-line-height: 0.85;
+/*line-height: 0.85;*/
 font-size: 10px;
-position: inherit;
+position: absolute;
 width: 100%;
+height: 70px;
 bottom: 0;
-margin-top: auto;
+left: 0;
+/*margin-top: auto;*/
 }
 
 .footer .contaniers {
-justify-content: center;
-align-items: center;
+
+
 max-width: 1200px;
-width: 50%;
+width: 100%;
 margin: auto;
 }
 

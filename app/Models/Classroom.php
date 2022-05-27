@@ -12,7 +12,10 @@ class Classroom extends Model
         'name_classroom',
         'ubicacion',
         'reservation_id',
-        
+
 
     ];
+    public function reservation(){
+        return $this->belongsTo(Reservation::class);
+    }
 }

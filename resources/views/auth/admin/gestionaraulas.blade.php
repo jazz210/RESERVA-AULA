@@ -22,10 +22,10 @@
     }
     table{
         width: 60%;
-        margin-left: auto; 
-        margin-right: auto;   
+        margin-left: auto;
+        margin-right: auto;
     }
-    
+
 </style>
 <div class="form-group">
     <body>
@@ -45,7 +45,7 @@
               <td>693A</td>
               <td><button class="btn btn-success font-bold border-2 border-white py-2 px-4 rounded-md hover:bg-white hover:text-indigo-700" >Editar</button></td>
               <td><button class="btn btn-success font-bold border-2 border-white py-2 px-4 rounded-md hover:bg-white hover:text-indigo-700" >Eliminar</button></td>
-            </tr> 
+            </tr>
             <tr>
               <td>693B</td>
               <td><button class="btn btn-success font-bold border-2 border-white py-2 px-4 rounded-md hover:bg-white hover:text-indigo-700" >Editar</button></td>

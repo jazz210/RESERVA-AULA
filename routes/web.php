@@ -46,9 +46,10 @@ Route::get('/usua', [UsuController::class, 'index'])
 
 Route::get('/gestionar', [GestionarController::class, 'create'])
     ->middleware('auth.admin')
-    ->name('gestionar.index'); 
+    ->name('gestionar.index');
+Route::resource('/gestionar',GestionarController::class);
 Route::post('/gestionar', [RegisterController::class, 'store'])
-    ->name('gestionar.store'); 
+    ->name('gestionar.store');
 
 Route::get('/aulas', [AulasController::class, 'create'])
     ->middleware('guest')
@@ -75,4 +76,4 @@ Route::get('/listareservas', [ListaReservasController::class, 'create'])
     ->middleware('auth.admin')
     ->name('listareservas.index');
 Route::post('/listareservas', [RegisterController::class, 'store'])
-    ->name('listareservas.store'); 
+    ->name('listareservas.store');

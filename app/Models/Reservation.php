@@ -19,4 +19,7 @@ class Reservation extends Model
     'details',
     'user_id'
 ];
+public function classroom(){
+    return $this->HasMany(Classroom::class);
+}
 }

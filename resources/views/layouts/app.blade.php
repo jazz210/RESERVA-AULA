@@ -99,7 +99,7 @@ justify-content: center;
 text-align:center;
 /*line-height: 0.85;*/
 font-size: 10px;
-position: fixed;
+position: absolute;
 width: 100%;
 height: 80px;
 bottom: 0;

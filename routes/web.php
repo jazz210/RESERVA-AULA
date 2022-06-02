@@ -9,6 +9,10 @@ use App\Http\Controllers\AulasController;
 use App\Http\Controllers\GestionarAulasController;
 use App\Http\Controllers\InformacionReservasController;
 use App\Http\Controllers\ListaReservasController;
+use App\Http\Controllers\SolicitudesController;
+use App\Http\Controllers\AsignarAulaController;
+use App\Http\Controllers\SolicitudesAceptadasController;
+
 
 
 
@@ -77,3 +81,21 @@ Route::get('/listareservas', [ListaReservasController::class, 'create'])
     ->name('listareservas.index');
 Route::post('/listareservas', [RegisterController::class, 'store'])
     ->name('listareservas.store');
+
+Route::get('/solicitudes', [SolicitudesController::class, 'create'])
+    ->middleware('auth.admin')
+    ->name('solicitudes.index');
+Route::post('/solicitudes', [SolicitudesController::class, 'store'])
+    ->name('solicitudes.store');
+
+Route::get('/asignaraula', [AsignarAulaController::class, 'create'])
+    ->middleware('auth.admin')
+    ->name('asignaraula.index');
+Route::post('/asignaraula', [AsignarAulaController::class, 'store'])
+    ->name('asignaraula.store');
+
+Route::get('/solicitudesaceptadas', [SolicitudesAceptadasController::class, 'create'])
+    ->middleware('auth.admin')
+    ->name('solicitudesaceptadas.index');
+Route::post('/solicitudesaceptadas', [SolicitudesAceptadasController::class, 'store'])
+    ->name('solicitudesaceptadas.store');

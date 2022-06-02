@@ -17,19 +17,20 @@
 
     }
     th, td{
-        padding: 1px;
+        padding: 2px;
     }
     th{
-        background-color: #327ace
+        background-color: #ce9657
     }
     td{
-        background-color: rgba(50, 156, 192, 0.5)
+        background-color: #d0d5d6
     }
     table{
-        width: 50%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
+
 </style>
 <body>
     <div class="container">
@@ -85,7 +86,7 @@
             </div>
 
         </div>
-        <a href="{{ route('gestionar.index') }}" class="breg font-semibold
+        <!--<a href="{{ route('gestionar.index') }}" class="breg font-semibold
         border-2 border-white rounded-md
         text-white">registrar nuevo</a>
         <style>
@@ -103,7 +104,7 @@
           .breg:hover{
             background-color: rgb(28, 105, 206);
           }
-      </style>
+      </style>-->
   <button class="btnsalir btn-success font-semibold border-2 border-white  rounded-md text-white"name="Cancelar" value="Cancelar" onclick="location.href='/admin'">Salir </button>
       <style>
           .btnsalir{

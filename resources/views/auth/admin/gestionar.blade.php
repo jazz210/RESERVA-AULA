@@ -33,7 +33,13 @@
 
 </style>
 <body>
+
     <div class="container">
+    <button class="btn btn-success"> 
+        @if ($message = Session::get('success'))
+        {{$message}}
+        @endif
+    </button>
         <h4 class="text-3xl text-center fond-bold ">Gestionar cuenta</h4>
         <div class="row">
             <div class="col-xl-12">

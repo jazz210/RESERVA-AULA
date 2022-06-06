@@ -92,26 +92,8 @@
             </div>
 
         </div>
-        <!--<a href="{{ route('gestionar.index') }}" class="breg font-semibold
-        border-2 border-white rounded-md
-        text-white">registrar nuevo</a>
-        <style>
-          .breg{
-            text-align: center;
-            bottom: -10px;
-              border: 1px solid rgb(240, 240, 244);
-              border-collapse: collapse;
-              padding: 7px;
-              width: 100px;
-              height: 60px;
-              left: 0em;
-              position: relative;
-          }
-          .breg:hover{
-            background-color: rgb(28, 105, 206);
-          }
-      </style>-->
   <button class="btnsalir btn-success font-semibold border-2 border-white  rounded-md text-white"name="Cancelar" value="Cancelar" onclick="location.href='/admin'">Salir </button>
+  
       <style>
           .btnsalir{
               text-align: center;

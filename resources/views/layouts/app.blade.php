@@ -11,9 +11,7 @@
 
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet"
-    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
-
-
+    href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css">
   </head>
 
   <body class=" text-gray-800">
@@ -30,6 +28,7 @@
         margin-right: auto;
       }
     </style>
+    
     
       <div class="w-1/2 px-12 mr-auto">
 
@@ -57,6 +56,7 @@
           border-2 border-white py-2 px-4 rounded-md hover:bg-white
           hover:text-indigo-700">Aulas</a>
         </li>
+        
       @endif
 
       </ul>

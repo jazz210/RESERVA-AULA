@@ -14,11 +14,13 @@ use App\Http\Controllers\AsignarAulaController;
 use App\Http\Controllers\SolicitudesAceptadasController;
 
 
-
+Route::get('/',function(){
+    return view('welcome'); 
+});
 
 Route::get('/', function () {
-    return view('home');
-})->middleware('auth')->name('home');
+    return view('reserva');
+})->middleware('auth')->name('reserva');
 
 Route::get('/register', [RegisterController::class, 'create'])
     ->middleware('auth.admin')

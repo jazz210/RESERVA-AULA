@@ -12,6 +12,7 @@ use App\Http\Controllers\ListaReservasController;
 use App\Http\Controllers\SolicitudesController;
 use App\Http\Controllers\AsignarAulaController;
 use App\Http\Controllers\SolicitudesAceptadasController;
+use App\Http\Controllers\MateriaController;
 
 
 Route::get('/',function(){
@@ -101,3 +102,9 @@ Route::get('/solicitudesaceptadas', [SolicitudesAceptadasController::class, 'cre
     ->name('solicitudesaceptadas.index');
 Route::post('/solicitudesaceptadas', [SolicitudesAceptadasController::class, 'store'])
     ->name('solicitudesaceptadas.store');
+
+    Route::get('/materia', [MateriaController::class, 'create'])
+    ->middleware('auth.admin')
+    ->name('materia.index');
+Route::post('/materia', [MateriaController::class, 'store'])
+    ->name('materia.store');

@@ -7,7 +7,7 @@
     <h1 class="text-3xl text-center fond-bold ">RESERVAR AULA</h1>
     <form class="mt-4" method="POST" action="{{ route('guardar-aula')}}">
         @csrf
-
+ 
         <input type="namedoc" class="border border-gray-200 rounded-md bg-gray-200 w-full
         text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" placeholder="Nombre de docente" id="namedoc" name="namedoc">
         @error('namedoc')
